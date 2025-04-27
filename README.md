@@ -4,3 +4,18 @@ A Google Apps Script that generates row UUIDs for any Column A with "UUID" as th
 ## Shared Secret
 
 Requires a long, strong, and complex shared secret stored as a script property named **SECRET_TOKEN**.
+
+## Example
+
+Command updates columns with headers "First Name" and "Last Name" if they exist in a row with `<ROW_UUID>`.
+
+```
+curl -L -H "Content-Type: application/json" \
+  -d '{
+    "authToken": "<SECRET TOKEN>",
+    "UUID": "<ROW UUID>",
+    "First Name": "Joey",
+    "Last Name": "JoeJoe"
+  }' \
+  '<ENDPOINT URL>'
+```
