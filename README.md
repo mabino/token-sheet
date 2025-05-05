@@ -5,6 +5,10 @@ A Google Apps Script that generates row UUIDs for any Column A with "UUID" as th
 
 Requires a long, strong, and complex shared secret stored as a script property named **SECRET_TOKEN**.
 
+## Setup
+
+Attach the scripts to a sheet, create a **SECRET_TOKEN** script property, and run the createOnChangeTrigger function once.
+
 ## Example
 
 Command updates columns with headers "First Name" and "Last Name" if they exist in a row with `<ROW_UUID>`.
